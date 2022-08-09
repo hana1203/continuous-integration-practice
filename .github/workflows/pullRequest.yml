@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Bare Minimum Requirements
+        uses: actions/setup-node@v1
         with:
           node-version: '16'
       - run: npm install
